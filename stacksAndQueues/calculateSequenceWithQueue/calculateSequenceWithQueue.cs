@@ -10,7 +10,7 @@ namespace calculateSequenceWithQueue
     {
         static void Main(string[] args)
         {
-            var n = int.Parse(Console.ReadLine());
+            var n = long.Parse(Console.ReadLine());
 
             var magicSequence = new Queue<long>();
             List<long> seqNumbers = new List<long>();

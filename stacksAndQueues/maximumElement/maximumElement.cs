@@ -11,6 +11,7 @@ namespace maximumElement
         static void Main(string[] args)
         {
             int lines = int.Parse(Console.ReadLine());
+            var maxElement = new Stack<int>();
 
             var stack = new Stack<int>();
 
@@ -21,17 +22,30 @@ namespace maximumElement
 
                 if (queue[0].Equals("1"))
                 {
-                    stack.Push(int.Parse(queue[1]));
+                    int currentElemet = (int.Parse(queue[1]));
+                    if (maxElement.Count() == 0)
+                    {
+                        maxElement.Push(currentElemet);
+                    }
+                    else if (maxElement.Peek() < currentElemet)
+                    {
+                        maxElement.Push(currentElemet);
+                    }
+                    stack.Push(currentElemet);
                 }
 
                 if (queue[0].Equals("2"))
                 {
-                    stack.Pop();
+                    int poppedElement = stack.Pop();
+                    if (maxElement.Peek() == poppedElement)
+                    {
+                        maxElement.Pop();
+                    }
                 }
 
                 if (queue[0].Equals("3"))
                 {
-                    Console.WriteLine(stack.Max());
+                    Console.WriteLine(maxElement.Peek());
                 }
             }
         }
