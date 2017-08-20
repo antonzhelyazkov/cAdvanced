@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stackFibonacci", "stackFibo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simpleTextEditor", "simpleTextEditor\simpleTextEditor.csproj", "{DE2A15ED-ABEC-448C-93C6-11FEBD3A2D6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "textEditor", "textEditor\textEditor.csproj", "{BA8C5E20-45BB-463B-8B73-2E317A2411C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "poisonousPlants", "poisonousPlants\poisonousPlants.csproj", "{FA8F4018-535F-4576-B55D-A92E9FDCD99D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,14 @@ Global
 		{DE2A15ED-ABEC-448C-93C6-11FEBD3A2D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE2A15ED-ABEC-448C-93C6-11FEBD3A2D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE2A15ED-ABEC-448C-93C6-11FEBD3A2D6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA8C5E20-45BB-463B-8B73-2E317A2411C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA8C5E20-45BB-463B-8B73-2E317A2411C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA8C5E20-45BB-463B-8B73-2E317A2411C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA8C5E20-45BB-463B-8B73-2E317A2411C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA8F4018-535F-4576-B55D-A92E9FDCD99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA8F4018-535F-4576-B55D-A92E9FDCD99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA8F4018-535F-4576-B55D-A92E9FDCD99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA8F4018-535F-4576-B55D-A92E9FDCD99D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -19,10 +19,7 @@ namespace simpleTextEditor
                 string[] currentCommand = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
                 if (currentCommand[0].Equals("1"))
                 {
-                    foreach (var item in currentCommand[1])
-                    {
-                        text += item;
-                    }
+                    text += currentCommand[1];
                     undoOperations.Push(text);
                    // Console.WriteLine(string.Join(" ", text));
                    // Console.WriteLine(undoOperations.Count());
@@ -30,20 +27,37 @@ namespace simpleTextEditor
                 }
                 if (currentCommand[0].Equals("2"))
                 {
-                    Console.WriteLine(text);
-                    text = text.Remove(text.Length - int.Parse(currentCommand[1]), int.Parse(currentCommand[1]));
-                    Console.WriteLine(text);
+                    //Console.WriteLine($"before 2 {text}");
+                    int removeSymbols = int.Parse(currentCommand[1]);
+                    text = text.Substring(0, text.Length - removeSymbols);
                     undoOperations.Push(text);
-                    //Console.WriteLine(undoOperations.Count());
+
+               //    if (text.Length >= removeSymbols)
+               //    {
+               //        text = text.Remove(text.Length - removeSymbols, removeSymbols);
+               //        //Console.WriteLine($"after 2 {text}");
+               //        undoOperations.Push(text);
+               //        //Console.WriteLine(undoOperations.Count());
+               //    }
                 }
                 if (currentCommand[0].Equals("3"))
                 {
-                    Console.WriteLine(text[int.Parse(currentCommand[1]) - 1]);
+                    int printNumber = int.Parse(currentCommand[1]) - 1;
+                    //Console.WriteLine($"{printNumber} {text.Count()}");
+                    if (printNumber >= 0 && printNumber < text.Count())
+                    {
+                        //Console.WriteLine(printNumber);
+                        Console.WriteLine(text[printNumber]);
+                    }
                 }
                 if (currentCommand[0].Equals("4"))
                 {
-                    undoOperations.Pop();
-                    text = undoOperations.Peek();
+                    if (undoOperations.Count() > 0)
+                    {
+                        undoOperations.Pop();
+                        text = undoOperations.Peek();
+                    }
+                    //Console.WriteLine(text);
                 }
                 //Console.WriteLine($"executed command {i}");
             }
