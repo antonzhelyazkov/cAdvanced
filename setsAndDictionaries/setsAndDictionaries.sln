@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "phonebook", "phonebook\phon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "minerTask", "minerTask\minerTask.csproj", "{86F67E31-F2D6-43D5-8873-B56E7AA396C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fixEmails", "fixEmails\fixEmails.csproj", "{B8D7E9E6-D195-4231-9ADE-F52AB1010BEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "handsOfCards", "handsOfCards\handsOfCards.csproj", "{5140A679-B78D-4B23-A6AF-9941E074A054}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{86F67E31-F2D6-43D5-8873-B56E7AA396C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86F67E31-F2D6-43D5-8873-B56E7AA396C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86F67E31-F2D6-43D5-8873-B56E7AA396C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D7E9E6-D195-4231-9ADE-F52AB1010BEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D7E9E6-D195-4231-9ADE-F52AB1010BEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D7E9E6-D195-4231-9ADE-F52AB1010BEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D7E9E6-D195-4231-9ADE-F52AB1010BEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5140A679-B78D-4B23-A6AF-9941E074A054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5140A679-B78D-4B23-A6AF-9941E074A054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5140A679-B78D-4B23-A6AF-9941E074A054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5140A679-B78D-4B23-A6AF-9941E074A054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
