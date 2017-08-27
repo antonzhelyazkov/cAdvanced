@@ -10,16 +10,23 @@ namespace handsOfCards
     {
         static void Main(string[] args)
         {
-            var players = new Dictionary<string, List<string>>();
+            var players = new Dictionary<string, HashSet<string>>();
             var inputLine = Console.ReadLine();
 
             while (!inputLine.Equals("JOKER"))
             {
                 var inputParams = inputLine.Split(':');
-                var cards = inputParams[1].Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                var cards = inputParams[1].Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                var tmpHash = new HashSet<string>();
+
+                foreach (var item in cards)
+                {
+                    tmpHash.Add(item);
+                }
+
                 if (!players.ContainsKey(inputParams[0]))
                 {
-                    players[inputParams[0]] = cards;
+                    players[inputParams[0]] = tmpHash;
                 }
                 else
                 {
